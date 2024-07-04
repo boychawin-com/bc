@@ -8,6 +8,14 @@ if (process.env.NODE_ENV === 'development') {
 }
 
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+  images: {
+    unoptimized: true,
+    domains: [
+      "localhost:3000",
+      "boychawin.com",
+    ],
+  },
+};
 
 export default nextConfig;
